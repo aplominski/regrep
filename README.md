@@ -35,6 +35,7 @@ Single pattern: foo
 
 ```--showline``` — shows line numbers before the line content
 
+```-benchmark``` - shows time of executation
 Example
 ```bash
 cat logs.txt | regrep "error||fail" --highlight --before 2 --after 2 --showline < logfile.txt
@@ -45,4 +46,3 @@ Finds lines containing error or fail, highlights matches, shows 2 lines of conte
 
 Patterns use ECMAScript regular expression syntax.
 
-The --benchmark flag is recognized but currently has no implementation.
